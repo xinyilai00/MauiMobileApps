@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMobileApps.Resources.Styles.ButtonStyles">
+
+    <Style x:Key="TitleButton" TargetType="Button">
+        <Setter Property="Margin" Value="12"/>
+        <Setter Property="HeightRequest" Value="50"/>
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="BackgroundColor" Value="RosyBrown"/>
+        <Setter Property="TextColor" Value="AntiqueWhite"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HorizontalOptions" Value="Fill"/>
+    </Style>
+
+</ResourceDictionary>
