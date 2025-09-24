@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiMobileApps.View.MainPage"
-             Title="MainPage">
+             Title="MainPage"
+             SemanticProperties.Description ="Main Page">
 
     <VerticalStackLayout Padding="24,16"
                          Spacing="24">
@@ -24,24 +25,29 @@
             <Button Text="Layouts"
                     Grid.Row="0"
                     Grid.Column="0"
-                    Style="{StaticResource TitleButton}"/>
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description ="Layout"/>
             <Button Text="Images"
                     Grid.Row="0"
                     Grid.Column="1"
-                    Style="{StaticResource TitleButton}"/>
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description ="Images"/>
             <Button Text="Collections"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Style="{StaticResource TitleButton}"/>
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description ="Collections"/>
             <Button Text="Controls"
                     Grid.Row="1"
                     Grid.Column="1"
-                    Style="{StaticResource TitleButton}"/>
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description ="Controls"/>
             <Button Text="SQL Lite"
                     Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Style="{StaticResource TitleButton}"/>
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description ="SQL Lite"/>
         </Grid>
 
     </VerticalStackLayout>

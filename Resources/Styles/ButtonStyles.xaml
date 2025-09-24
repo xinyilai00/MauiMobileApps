@@ -7,7 +7,7 @@
         <Setter Property="Margin" Value="12"/>
         <Setter Property="HeightRequest" Value="50"/>
         <Setter Property="CornerRadius" Value="20"/>
-        <Setter Property="BackgroundColor" Value="RosyBrown"/>
+        <Setter Property="BackgroundColor" Value="Purple"/>
         <Setter Property="TextColor" Value="AntiqueWhite"/>
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="HorizontalOptions" Value="Fill"/>
