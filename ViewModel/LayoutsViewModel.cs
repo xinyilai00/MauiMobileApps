@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiMobileApps.Model.Titles
+namespace MauiMobileApps.ViewModel
 {
-    public static class TitleMain
+    class LayoutsViewModel
     {
-        public static string Title { get; } = "Main Page";
     }
 }
