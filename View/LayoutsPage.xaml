@@ -20,12 +20,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="{Binding Layouts}"
-                    Command="{Binding OnLayoutsClick}"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description ="Layout"/>
+            <Button Text="Stack Layout"/>
         </Grid>
 
     </VerticalStackLayout>
