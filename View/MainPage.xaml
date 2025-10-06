@@ -23,7 +23,7 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding Layouts}"
-                    Command="{Binding OnLayoutsClicked}"
+                    Command="{Binding LayoutsClickedCommand}"
                     Grid.Row="0"
                     Grid.Column="0"
                     Style="{StaticResource TitleButton}"

@@ -1,36 +1,52 @@
 ﻿using MauiMobileApps.Model.Titles;
 using MyFirstMobileApp.ViewModels;
 using System.Windows.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using MauiMobileApps.ViewModel;
+using MauiMobileApps.View;
 
 namespace MauiMobileApps.ViewModel
 {
-    public class MainViewModel : BaseViewModel
+    public partial class MainViewModel : ObservableObject
     {
-        public string Layouts { get; set; } = TitleMain.Layouts;
-        public string Images { get; set; } = TitleMain.Images;
-        public string Collections { get; set; } = TitleMain.Collections;
-        public string Controls { get; set; } = TitleMain.Controls;
-        public string SQLLite { get; set; } = TitleMain.SQLLite;
+     
+        [ObservableProperty]
+        private string layouts = TitleMain.Layouts;
+        [ObservableProperty]
+        private string images = TitleMain.Images;
+        [ObservableProperty]
+        private string collections = TitleMain.Collections;
+        [ObservableProperty]
+        private string controls = TitleMain.Controls;
+        [ObservableProperty]
+        private string sQLLite = TitleMain.SQLLite;
 
-        //Button Commands
-        public ICommand OnLayoutsClicked { get; set; }
+        [RelayCommand]
+        private async Task LayoutsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsPage));
+        }
         public MainViewModel()
         {
-            Title = TitleMain.Title;
+            //Title = TitleMain.Title;
 
             //Set Commands
-            OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
+            //OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
         }
 
-        private async void OnLayoutsClickedAsync()
-        {
-            await Application.Current.MainPage.Navigation.PushAsync(new View.LayoutsPage());
-        }
+        //public string Layouts { get; set; } = TitleMain.Layouts;
+        //public string Images { get; set; } = TitleMain.Images;
+        //public string Collections { get; set; } = TitleMain.Collections;
+        //public string Controls { get; set; } = TitleMain.Controls;
+        //public string SQLLite { get; set; } = TitleMain.SQLLite;
+
+        //Button Commands
+        //public ICommand OnLayoutsClicked { get; set; }
+
+        //private async void OnLayoutsClickedAsync()
+        //{
+        //await Application.Current.MainPage.Navigation.PushAsync(new View.LayoutsPage());
+        // }
     }
 }

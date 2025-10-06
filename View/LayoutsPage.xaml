@@ -41,10 +41,15 @@
             
             <Button Grid.Row="2"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
                     Text="{Binding AbsoluteLayout}"
                     Style="{StaticResource TitleButton}"
                     SemanticProperties.Description="Absolute Layout"/>
+
+            <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="{Binding FlexLayout}"
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description="Flex Layout"/>
 
         </Grid>
 

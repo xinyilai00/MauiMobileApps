@@ -13,5 +13,6 @@ namespace MauiMobileApps.ViewModel
         public string VerticalStack { get; set; } = TitleLayouts.VerticalStack;
         public string HorizontalStack { get; set; } = TitleLayouts.HorizontalStack;
         public string AbsoluteLayout { get; set; } = TitleLayouts.AbsoluteLayout;
+        public string FlexLayout { get; set; } = TitleLayouts.FlexLayout;
     }
 }
