@@ -8,5 +8,9 @@ namespace MauiMobileApps.Model.Titles
 {
     class TitleLayouts
     {
+        public static string StackLayout { get;} = "Stack Layout";
+        public static string VerticalStack { get; } = "Vertical Stack";
+        public static string HorizontalStack { get; } = "Horizontal Stack";
+        public static string AbsoluteLayout { get; } = "Absolute Layout";
     }
 }

@@ -20,7 +20,32 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="Stack Layout"/>
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding StackLayout}"
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description="Stack Layout"/>
+            
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding VerticalStack}"
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description="Vertical Stack"/>
+            
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding HorizontalStack}"
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description="Horizontal Stack"/>
+            
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding AbsoluteLayout}"
+                    Style="{StaticResource TitleButton}"
+                    SemanticProperties.Description="Absolute Layout"/>
+
         </Grid>
 
     </VerticalStackLayout>

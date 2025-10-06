@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiMobileApps.View.MainPage"
              Title="{Binding Title}"
-             SemanticProperties.Description ="Main Page">
+             SemanticProperties.Description ="MainPage">
 
     <VerticalStackLayout Padding="24,16"
                          Spacing="24">
@@ -23,31 +23,31 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding Layouts}"
-                    Command="{Binding OnLayoutsClick}"
+                    Command="{Binding OnLayoutsClicked}"
                     Grid.Row="0"
                     Grid.Column="0"
                     Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description ="Layout"/>
+                    SemanticProperties.Description ="Layouts"/>
+            
             <Button Text="{Binding Images}"
-                    Command="{Binding OnImagesClick}"
                     Grid.Row="0"
                     Grid.Column="1"
                     Style="{StaticResource TitleButton}"
                     SemanticProperties.Description ="Images"/>
+            
             <Button Text="{Binding Collections}"
-                    Command="{Binding OnCollectionsClick}"
                     Grid.Row="1"
                     Grid.Column="0"
                     Style="{StaticResource TitleButton}"
                     SemanticProperties.Description ="Collections"/>
+            
             <Button Text="{Binding Controls}"
-                    Command="{Binding OnControlsClick}"
                     Grid.Row="1"
                     Grid.Column="1"
                     Style="{StaticResource TitleButton}"
                     SemanticProperties.Description ="Controls"/>
-            <Button Text="{Binding SQL}"
-                    Command="{Binding OnSQLClick}"
+            
+            <Button Text="{Binding SQLLite}"
                     Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"

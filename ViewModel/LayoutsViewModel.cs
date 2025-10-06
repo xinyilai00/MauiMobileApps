@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MauiMobileApps.Model.Titles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,9 @@ namespace MauiMobileApps.ViewModel
 {
     class LayoutsViewModel
     {
+        public string StackLayout { get; set; } = TitleLayouts.StackLayout;
+        public string VerticalStack { get; set; } = TitleLayouts.VerticalStack;
+        public string HorizontalStack { get; set; } = TitleLayouts.HorizontalStack;
+        public string AbsoluteLayout { get; set; } = TitleLayouts.AbsoluteLayout;
     }
 }
