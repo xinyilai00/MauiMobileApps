@@ -1,5 +1,4 @@
 ﻿using MauiMobileApps.Model.Titles;
-using MyFirstMobileApp.ViewModels;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -13,14 +12,21 @@ namespace MauiMobileApps.ViewModel
      
         [ObservableProperty]
         private string layouts = TitleMain.Layouts;
+
         [ObservableProperty]
         private string images = TitleMain.Images;
+
         [ObservableProperty]
         private string collections = TitleMain.Collections;
+
         [ObservableProperty]
         private string controls = TitleMain.Controls;
+
         [ObservableProperty]
         private string sQLLite = TitleMain.SQLLite;
+
+        [ObservableProperty]
+        private string title = TitleMain.Title;
 
         [RelayCommand]
         private async Task LayoutsClicked()

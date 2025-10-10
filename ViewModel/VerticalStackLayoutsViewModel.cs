@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiMobileApps.Model.Titles
+namespace MauiMobileApps.ViewModel
 {
-    class TitleStackLayouts
+    internal class VerticalStackLayoutsViewModel
     {
-        public static string Title { get; } = "StackLayouts Page";
     }
 }

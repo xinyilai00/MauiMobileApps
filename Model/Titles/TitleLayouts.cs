@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MauiMobileApps.Model.Titles
 {
-    class TitleLayouts
+    public static class TitleLayouts
     {
         public static string Title { get; } = "Layouts Page";
         public static string StackLayout { get;} = "Stack Layout";
