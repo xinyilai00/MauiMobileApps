@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiMobileApps.View.StackLayoutPage"
+             x:Class="MauiMobileApps.View.LayoutsStackPage"
              Title="{Binding Title}">
 
     <StackLayout>
-        
+
         <StackLayout VerticalOptions="Fill"
                      HorizontalOptions="Fill"
                      Padding="0,30,0,0">
-            
+
             <BoxView WidthRequest="150"
                      HeightRequest="150"
                      Color="LightBlue"/>
         </StackLayout>
-        
+
         <StackLayout VerticalOptions="End"
                      HorizontalOptions="End"
                      Padding="0,30,0,0">
@@ -23,7 +23,7 @@
                      HeightRequest="100"
                      Color="LightGreen"/>
         </StackLayout>
-        
+
         <StackLayout VerticalOptions="EndAndExpand"
                      HorizontalOptions="StartAndExpand">
 
@@ -31,6 +31,6 @@
                      HeightRequest="200"
                      Color="LightPink"/>
         </StackLayout>
-        
+
     </StackLayout>
 </ContentPage>

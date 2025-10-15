@@ -12,7 +12,7 @@ namespace MauiMobileApps
         private void RegisterRoutes()
         {
             Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
-            Routing.RegisterRoute(nameof(StackLayoutPage), typeof(StackLayoutPage));
+            Routing.RegisterRoute(nameof(LayoutsStackPage), typeof(LayoutsStackPage));
             Routing.RegisterRoute(nameof(VerticalStackLayoutPage), typeof(VerticalStackLayoutPage));
         }
     }
