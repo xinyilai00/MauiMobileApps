@@ -10,13 +10,7 @@ namespace MauiMobileApps.ViewModel
     {
         public VerticalStackLayoutsViewModel()
         {
-            Content = new VerticalStackLayout
-            {
-                Children =
-                {
-                    new Label {HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center}
-                }
-            };
+            
         }
     }
 }

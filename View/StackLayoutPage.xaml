@@ -20,16 +20,16 @@
                      Padding="0,30,0,0">
 
             <BoxView WidthRequest="200"
-             HeightRequest="100"
-             Color="LightGreen"/>
+                     HeightRequest="100"
+                     Color="LightGreen"/>
         </StackLayout>
         
         <StackLayout VerticalOptions="EndAndExpand"
                      HorizontalOptions="StartAndExpand">
 
             <BoxView WidthRequest="100"
-             HeightRequest="200"
-             Color="LightPink"/>
+                     HeightRequest="200"
+                     Color="LightPink"/>
         </StackLayout>
         
     </StackLayout>
