@@ -34,7 +34,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task VerticalStackLayoutsClicked()
         {
-            await Shell.Current.GoToAsync(nameof(VerticalStackLayoutPage));
+            await Shell.Current.GoToAsync(nameof(LayoutsVerticalPage));
         }
         public LayoutsViewModel()
         {

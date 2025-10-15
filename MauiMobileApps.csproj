@@ -82,10 +82,10 @@
 	  <MauiXaml Update="View\LayoutsStackPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\MainPage.xaml">
+	  <MauiXaml Update="View\LayoutsVerticalPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\VerticalStackLayoutPage.xaml">
+	  <MauiXaml Update="View\MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

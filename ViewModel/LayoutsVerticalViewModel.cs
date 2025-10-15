@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MauiMobileApps.ViewModel
 {
-    public partial class VerticalStackLayoutsViewModel : ObservableObject
+    public partial class LayoutsVerticalViewModel : ObservableObject
     {
         [ObservableProperty]
         private string title = TitleVerticalStackLayouts.Title;
