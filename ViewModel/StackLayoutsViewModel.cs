@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MauiMobileApps.ViewModel
 {
-    public class StackLayoutViewModel : ContentPage
+    public class StackLayoutsViewModel : ContentPage
     {
-        public StackLayoutViewModel()
+        public StackLayoutsViewModel()
         {
             Content = new VerticalStackLayout
             {

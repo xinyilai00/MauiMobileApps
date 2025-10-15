@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace MauiMobileApps.ViewModel
 {
-    internal class VerticalStackLayoutsViewModel
+    public class VerticalStackLayoutsViewModel : ContentPage
     {
+        public VerticalStackLayoutsViewModel()
+        {
+            Content = new VerticalStackLayout
+            {
+                Children =
+                {
+                    new Label {HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center}
+                }
+            };
+        }
     }
 }
