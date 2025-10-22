@@ -11,6 +11,6 @@ namespace MauiMobileApps.ViewModel
     public partial class LayoutsStackViewModel : ObservableObject
     {
         [ObservableProperty]
-        private string title = TitleStackLayouts.Title;
+        private string title = TitleLayoutStack.Title;
     }
 }

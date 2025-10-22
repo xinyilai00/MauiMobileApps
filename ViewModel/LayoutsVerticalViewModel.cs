@@ -11,6 +11,6 @@ namespace MauiMobileApps.ViewModel
     public partial class LayoutsVerticalViewModel : ObservableObject
     {
         [ObservableProperty]
-        private string title = TitleVerticalStackLayouts.Title;
+        private string title = TitleLayoutVerticalStack.Title;
     }
 }
