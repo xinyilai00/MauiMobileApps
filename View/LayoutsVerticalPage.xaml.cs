@@ -6,6 +6,6 @@ public partial class LayoutsVerticalPage : ContentPage
     public LayoutsVerticalPage()
     {
         InitializeComponent();
-        BindingContext = new LayoutsVerticalPage();
+        BindingContext = new LayoutsVerticalViewModel();
     }
 }

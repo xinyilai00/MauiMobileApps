@@ -26,33 +26,30 @@
                     Grid.ColumnSpan="2"
                     Text="{Binding StackLayout}"
                     Command="{Binding StackLayoutsClickedCommand}"
-                    Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description="Stack Layout"/>
+                    Style="{StaticResource TitleButton}"/>
             
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Text="{Binding VerticalStack}"
                     Command="{Binding VerticalStackLayoutsClickedCommand}"
-                    Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description="Vertical Stack"/>
+                    Style="{StaticResource TitleButton}"/>
             
             <Button Grid.Row="1"
                     Grid.Column="1"
                     Text="{Binding HorizontalStack}"
-                    Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description="Horizontal Stack"/>
+                    Command="{Binding HorizontalStackLayoutsClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
             
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Text="{Binding AbsoluteLayout}"
-                    Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description="Absolute Layout"/>
+                    Command="{Binding AbsoluteStackLayoutsClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="1"
                     Text="{Binding FlexLayout}"
-                    Style="{StaticResource TitleButton}"
-                    SemanticProperties.Description="Flex Layout"/>
+                    Style="{StaticResource TitleButton}"/>
 
         </Grid>
 

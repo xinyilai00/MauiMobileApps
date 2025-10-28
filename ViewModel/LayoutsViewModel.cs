@@ -36,6 +36,18 @@ namespace MauiMobileApps.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(LayoutsVerticalPage));
         }
+
+        [RelayCommand]
+        private async Task HorizontalStackLayoutsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutHorizontalPage));
+        }
+        
+        [RelayCommand]
+        private async Task AbsoluteStackLayoutsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutAbsolutePage));
+        }
         public LayoutsViewModel()
         {
             //Title = TitleLayouts.Title;
