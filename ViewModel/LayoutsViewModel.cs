@@ -48,6 +48,11 @@ namespace MauiMobileApps.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(LayoutAbsolutePage));
         }
+        [RelayCommand]
+        private async Task FlexLayoutsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutFlexPage));
+        }
         public LayoutsViewModel()
         {
             //Title = TitleLayouts.Title;

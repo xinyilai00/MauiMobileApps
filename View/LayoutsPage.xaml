@@ -49,6 +49,7 @@
             <Button Grid.Row="2"
                     Grid.Column="1"
                     Text="{Binding FlexLayout}"
+                    Command="{Binding FlexLayoutsClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
         </Grid>
