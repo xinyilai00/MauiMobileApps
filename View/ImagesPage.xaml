@@ -8,7 +8,7 @@
                          Spacing="24">
         <Grid RowSpacing="20"
               ColumnSpacing="20"
-              Padding="0">
+              Padding="24">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -23,7 +23,7 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding URI}"
+                    Text="{Binding Uri}"
                     Command="{Binding URIImageClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
 
@@ -32,6 +32,7 @@
                     Text="{Binding Embedded}"
                     Command="{Binding EmbeddedImageClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
+
         </Grid>
         
     </VerticalStackLayout>

@@ -12,5 +12,20 @@ namespace MauiMobileApps.ViewModel
     {
         [ObservableProperty]
         private string title = TitleURI.Title;
+
+        [ObservableProperty]
+        private ImageSource imageSourceURL;
+
+        public ImagesURIViewModel()
+        {
+            ImageSourceURL = new UriImageSource
+            {
+                Uri = new Uri(TitleURI.ImageURL),
+                CachingEnabled = true,
+                CacheValidity = TimeSpan.FromDays(1)
+            };
+        }
+
+
     }
 }

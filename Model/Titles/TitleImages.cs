@@ -9,7 +9,7 @@ namespace MauiMobileApps.Model.Titles
     public static class TitleImages
     {
         public static string Title { get; } = "Images Page";
-        public static string URI { get; } = "URI Images";
-        public static string Embedded { get; } = "Embedded Images";
+        public static string URI { get; } = "URI";
+        public static string Embedded { get; } = "Embedded";
     }
 }
