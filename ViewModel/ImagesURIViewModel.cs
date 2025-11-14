@@ -10,15 +10,14 @@ namespace MauiMobileApps.ViewModel
 {
     public partial class ImagesURIViewModel : ObservableObject
     {
-        [ObservableProperty]
-        private string title = TitleURI.Title;
+        public string Title => TitleURI.Title;
 
         [ObservableProperty]
-        private ImageSource imageSourceURL;
+        private ImageSource imageSourceUrl;
 
         public ImagesURIViewModel()
         {
-            ImageSourceURL = new UriImageSource
+            imageSourceUrl = new UriImageSource
             {
                 Uri = new Uri(TitleURI.ImageURL),
                 CachingEnabled = true,

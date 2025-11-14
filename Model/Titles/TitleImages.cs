@@ -11,5 +11,6 @@ namespace MauiMobileApps.Model.Titles
         public static string Title { get; } = "Images Page";
         public static string URI { get; } = "URI";
         public static string Embedded { get; } = "Embedded";
+        public static string Activity { get; } = "Activity Indicator";
     }
 }

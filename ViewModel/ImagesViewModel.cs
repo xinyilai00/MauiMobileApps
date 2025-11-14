@@ -32,6 +32,12 @@ namespace MauiMobileApps.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(ImagesEmbeddedPage));
         }
+
+        [RelayCommand]
+        private async Task ActivityImageClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ImageActivityIndicatorPage));
+        }
         public ImagesViewModel()
         {
 

@@ -32,6 +32,13 @@
                     Text="{Binding Embedded}"
                     Command="{Binding EmbeddedImageClickedCommand}"
                     Style="{StaticResource TitleButton}"/>
+            
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding Activity}"
+                    Command="{Binding ActivityImageClickedCommand}"
+                    Style="{StaticResource TitleButton}"/>  
 
         </Grid>
         
