@@ -14,7 +14,8 @@ namespace MauiMobileApps.ViewModel
 {
     public partial class ImagesActivityViewModel : ObservableObject
     {
-        public string Title = TitleActivity.Title;
+        [ObservableProperty]
+        private string title = TitleActivity.Title;
 
         [ObservableProperty]
         private bool isLoading = true;

@@ -5,7 +5,7 @@
              Title="{Binding Title}">
 
     <VerticalStackLayout>
-        <Image Source="{Binding GetImageSource}"
+        <Image Source="{Binding ImageSource}"
 		       Aspect="AspectFit"/>
     </VerticalStackLayout>
 
