@@ -1,4 +1,5 @@
 using MauiMobileApps.ViewModel;
+
 namespace MauiMobileApps.View;
 
 public partial class ImageActivityIndicatorPage : ContentPage

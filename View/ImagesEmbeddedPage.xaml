@@ -6,7 +6,7 @@
 
     <VerticalStackLayout>
         <Image Source="{Binding GetImageSource}"
-		 Aspect="AspectFit"/>
+		       Aspect="AspectFit"/>
     </VerticalStackLayout>
 
 </ContentPage>

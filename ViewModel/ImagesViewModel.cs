@@ -21,6 +21,9 @@ namespace MauiMobileApps.ViewModel
         [ObservableProperty]
         private string embedded = TitleImages.Embedded;
 
+        [ObservableProperty]
+        private string activity = TitleImages.Activity;
+
         [RelayCommand]
         private async Task URIImageClicked()
         {

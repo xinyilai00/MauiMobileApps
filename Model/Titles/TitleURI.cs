@@ -9,6 +9,6 @@ namespace MauiMobileApps.Model.Titles
     public static class TitleURI
     {
         public static string Title { get; } = "URI Images Page";
-        public static string ImageURL { get; } = "https://unsplash.com/photos/card-for-the-potted-planter-seasonal-workshops-wd3UDXNgYWw";
+        public static string ImageURL { get; } = "https://images.unsplash.com/photo-1761864293891-3ee74cf2b81d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
     }
 }

@@ -25,7 +25,10 @@ namespace MauiMobileApps.ViewModel
         [ObservableProperty]
         private ImageSource loadedImage;
 
-        public ImagesActivityViewModel() => _ = LoadImageAsync();
+        public ImagesActivityViewModel()
+        {
+            _ = LoadImageAsync();
+        }
 
         private async Task LoadImageAsync()
         {

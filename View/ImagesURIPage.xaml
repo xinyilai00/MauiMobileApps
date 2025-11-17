@@ -5,7 +5,7 @@
              Title="{Binding Title}">
 
     <VerticalStackLayout HorizontalOptions="Center">
-        <Image Source="{Binding ImageSourceUrl}"/>
+        <Image Source ="{Binding ImageSourceUrl}"/>
     </VerticalStackLayout>
 
 </ContentPage>
