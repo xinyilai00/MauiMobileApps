@@ -34,6 +34,7 @@
                     Style="{StaticResource TitleButton}"/>
             
             <Button Text="{Binding Collections}"
+                    Command="{Binding CollectionsClickedCommand}"
                     Grid.Row="1"
                     Grid.Column="0"
                     Style="{StaticResource TitleButton}"/>

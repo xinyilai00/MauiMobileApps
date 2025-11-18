@@ -22,6 +22,9 @@ namespace MauiMobileApps
             Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
             Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
             Routing.RegisterRoute(nameof(ImageActivityIndicatorPage), typeof(ImageActivityIndicatorPage));
+
+            Routing.RegisterRoute(nameof(CollectionsPage), typeof(CollectionsPage));
+            Routing.RegisterRoute(nameof(CollectionGOGwImagesPage), typeof(CollectionGOGwImagesPage));
         }
     }
 }

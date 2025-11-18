@@ -39,7 +39,6 @@
                     Text="{Binding Activity}"
                     Command="{Binding ActivityImageClickedCommand}"
                     Style="{StaticResource TitleButton}"/>  
-
         </Grid>
         
     </VerticalStackLayout>

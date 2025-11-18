@@ -69,6 +69,12 @@
 		<MauiXaml Update="Resources\Styles\ButtonStyles.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="View\CollectionGOGwImagesPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="View\CollectionsPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="View\ImageActivityIndicatorPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
