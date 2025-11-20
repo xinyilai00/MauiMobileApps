@@ -17,7 +17,7 @@ public class GOGActors
     }
 
     public GOGActors(string name) => NameofActor = name;
-    public GOGActors(string character) => NameofChar = character;
+    //public GOGActors(string character) => NameofChar = character;
 
     public static List<GOGActors> GetActor() => new List<GOGActors>
     {
@@ -28,12 +28,12 @@ public class GOGActors
         new GOGActors("Karen Gillan")
      };
 
-    public static List<GOGActors> GetChar() => new List<GOGActors>
-    {
-        new GOGActors("Starlord"),
-        new GOGActors("Gamora"),
-        new GOGActors("Groot"),
-        new GOGActors("Rocket"),
-        new GOGActors("Nebula")
-     };
+    //public static List<GOGActors> GetChar() => new List<GOGActors>
+   //{
+        //new GOGActors("Starlord"),
+       // new GOGActors("Gamora"),
+        //new GOGActors("Groot"),
+       // new GOGActors("Rocket"),
+        //new GOGActors("Nebula")
+     //};
 }
