@@ -50,6 +50,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Gog\gamora.jpg" />
+	  <None Remove="Resources\Images\Gog\groot.jpg" />
+	  <None Remove="Resources\Images\Gog\nebula.jpg" />
+	  <None Remove="Resources\Images\Gog\rocket.jpg" />
+	  <None Remove="Resources\Images\Gog\starlord.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Gog\gamora.jpg" />
+	  <MauiImage Include="Resources\Images\Gog\groot.jpg" />
+	  <MauiImage Include="Resources\Images\Gog\nebula.jpg" />
+	  <MauiImage Include="Resources\Images\Gog\rocket.jpg" />
+	  <MauiImage Include="Resources\Images\Gog\starlord.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
@@ -111,10 +127,6 @@
 		<MauiXaml Update="View\MainPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Resources\Images\Gog\" />
 	</ItemGroup>
 
 </Project>

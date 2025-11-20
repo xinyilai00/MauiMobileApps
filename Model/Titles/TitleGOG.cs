@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MauiMobileApps.Model.Titles
 {
-    internal class TitleGOG
+    public static class TitleGOG
     {
+        public static string Title { get; } = "Collection w/Images";
     }
 }
