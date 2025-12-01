@@ -29,9 +29,6 @@
                             <ColumnDefinition  Width="Auto"/>
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="{Binding ImageSource}"
-                                Aspect="AspectFit"/>
-                            
                         <Label Text="{Binding NameofActor}"
                                Grid.Column="1"
                                FontAttributes="Bold"
@@ -39,7 +36,7 @@
                                HorizontalTextAlignment="Center"
                                TextColor="CadetBlue"/>
 
-                        <Label Text="{Binding NameofActor}"
+                        <Label Text="{Binding NameofChar}"
                                Grid.Row="1"
                                Grid.Column="1"
                                FontAttributes="Bold, Italic"

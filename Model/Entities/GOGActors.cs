@@ -10,30 +10,26 @@ public class GOGActors
 {
     public string NameofActor { get; set; }
     public string NameofChar { get; set; }
+    public string NameofImage { get; set; }
 
     public GOGActors()
     {
 
     }
 
-    public GOGActors(string name) => NameofActor = name;
-    //public GOGActors(string character) => NameofChar = character;
+    public GOGActors(string name, string character, string imag)
+    {
+        NameofActor = name;
+        NameofChar = character;
+        NameofImage = imag;
+    }
 
     public static List<GOGActors> GetActor() => new List<GOGActors>
     {
-        new GOGActors("Chris Pratt"),
-        new GOGActors("Zoe Saldana"),
-        new GOGActors("Vin Diesel"),
-        new GOGActors("Bradley Cooper"),
-        new GOGActors("Karen Gillan")
+        new GOGActors("Chris Pratt", "Starlord", "starlord.jpg"),
+        new GOGActors("Zoe Saldana", "Gamora", "gamora.jpg"),
+        new GOGActors("Vin Diesel", "Groot", "groot.jpg"),
+        new GOGActors("Bradley Cooper", "Rocket", "rocket.jpg"),
+        new GOGActors("Karen Gillan", "Nebula", "nebula.jpg")
      };
-
-    //public static List<GOGActors> GetChar() => new List<GOGActors>
-   //{
-        //new GOGActors("Starlord"),
-       // new GOGActors("Gamora"),
-        //new GOGActors("Groot"),
-       // new GOGActors("Rocket"),
-        //new GOGActors("Nebula")
-     //};
 }
