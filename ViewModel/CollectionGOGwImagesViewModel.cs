@@ -32,7 +32,7 @@ namespace MauiMobileApps.ViewModel
                 GOGActorsCollection.Clear();
                 foreach (var p in _gogactors)
                 {
-                    GOGActorsCollection.Add(new GOGActors { NameofActor = p.NameofActor });
+                    GOGActorsCollection.Add(new GOGActors { NameofActor = p.NameofActor, NameofChar = p.NameofChar, NameofImage = p.NameofImage });
                 }
             }
             catch (Exception ex)

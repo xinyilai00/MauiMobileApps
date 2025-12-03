@@ -18,7 +18,7 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="local:GOGActors">
                     <Grid Padding="2">
-                        
+
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
@@ -29,27 +29,40 @@
                             <ColumnDefinition  Width="Auto"/>
                         </Grid.ColumnDefinitions>
 
-                        <Label Text="{Binding NameofActor}"
-                               Grid.Column="1"
-                               FontAttributes="Bold"
-                               FontSize="Medium"
-                               HorizontalTextAlignment="Center"
-                               TextColor="CadetBlue"/>
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="{Binding NameofImage}"
+                                   Grid.Column="0"
+                                   WidthRequest="100"
+                                   HeightRequest="100"
+                                   Aspect="AspectFill"
+                                   HorizontalOptions="Start"/>
 
-                        <Label Text="{Binding NameofChar}"
-                               Grid.Row="1"
-                               Grid.Column="1"
-                               FontAttributes="Bold, Italic"
-                               FontSize="Medium"
-                               HorizontalTextAlignment="Center"
-                               TextColor="Blue"/>
+                            <VerticalStackLayout Padding="10">
+                                <Label Text="{Binding NameofActor}"
+                                       Grid.Column="1"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="CadetBlue"/>
+
+                                <Label Text="{Binding NameofChar}"
+                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       FontAttributes="Bold, Italic"
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Start"
+                                       TextColor="Blue"/>
+
+                            </VerticalStackLayout>
+
+                            <BoxView HeightRequest="2" BackgroundColor="Grey"/>
+
+                        </HorizontalStackLayout>
 
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
-        <BoxView HeightRequest="1" BackgroundColor="Grey"/>
-
+        
     </VerticalStackLayout>
 </ContentPage>
