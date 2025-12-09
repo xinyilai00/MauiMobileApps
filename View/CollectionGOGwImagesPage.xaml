@@ -21,19 +21,10 @@
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition  Width="Auto"/>
-                            <ColumnDefinition  Width="Auto"/>
-                            <ColumnDefinition  Width="Auto"/>
-                        </Grid.ColumnDefinitions>
 
                         <HorizontalStackLayout Padding="5">
                             <Image Source="{Binding NameofImage}"
-                                   Grid.Column="0"
                                    WidthRequest="100"
                                    HeightRequest="100"
                                    Aspect="AspectFill"
@@ -41,25 +32,22 @@
 
                             <VerticalStackLayout Padding="10">
                                 <Label Text="{Binding NameofActor}"
-                                       Grid.Column="1"
                                        FontAttributes="Bold"
                                        FontSize="Medium"
                                        HorizontalTextAlignment="Center"
                                        TextColor="CadetBlue"/>
 
                                 <Label Text="{Binding NameofChar}"
-                                       Grid.Column="1"
-                                       Grid.Row="1"
                                        FontAttributes="Bold, Italic"
                                        FontSize="Medium"
                                        HorizontalTextAlignment="Start"
                                        TextColor="Blue"/>
 
                             </VerticalStackLayout>
-                            
-                            <BoxView HeightRequest="2" BackgroundColor="Grey"/>
 
                         </HorizontalStackLayout>
+
+                        <BoxView Margin="0,120,0,0" HeightRequest="2" WidthRequest="10000" BackgroundColor="Black"/>
 
                     </Grid>
                 </DataTemplate>

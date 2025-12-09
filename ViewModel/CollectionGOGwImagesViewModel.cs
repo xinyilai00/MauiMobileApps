@@ -16,7 +16,7 @@ namespace MauiMobileApps.ViewModel
     public partial class CollectionGOGwImagesViewModel : ObservableObject
     {
         private List<GOGActors> _gogactors;
-        public string title => TitleGOG.Title;
+        public string Title => TitleGOG.Title;
         public ObservableCollection<GOGActors> GOGActorsCollection { get; } = new();
 
         public CollectionGOGwImagesViewModel()
