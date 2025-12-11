@@ -26,6 +26,9 @@ namespace MauiMobileApps
             Routing.RegisterRoute(nameof(CollectionsPage), typeof(CollectionsPage));
             Routing.RegisterRoute(nameof(CollectionMMPage), typeof(CollectionMMPage));
             Routing.RegisterRoute(nameof(CollectionGOGwImagesPage), typeof(CollectionGOGwImagesPage));
+            Routing.RegisterRoute(nameof(CollectionUpdateablePage), typeof(CollectionUpdateablePage));
+            Routing.RegisterRoute(nameof(CollectionEditPage), typeof(CollectionEditPage));
+            Routing.RegisterRoute(nameof(CollectionAddPage), typeof(CollectionAddPage));
         }
     }
 }

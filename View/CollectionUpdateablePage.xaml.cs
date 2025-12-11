@@ -1,9 +1,12 @@
+using MauiMobileApps.ViewModel;
+
 namespace MauiMobileApps.View;
 
 public partial class CollectionUpdateablePage : ContentPage
 {
-	public CollectionUpdateablePage()
+	public CollectionUpdateablePage(CollectionUpdateableViewModel vm)
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+        BindingContext = vm;
+    }
 }

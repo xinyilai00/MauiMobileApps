@@ -42,7 +42,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task ButtonsCollectionClicked()
         {
-            //await Shell.Current.GoToAsync(nameof());
+            await Shell.Current.GoToAsync(nameof(CollectionUpdateablePage));
         }
 
         [RelayCommand]

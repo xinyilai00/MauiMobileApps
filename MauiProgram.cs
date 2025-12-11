@@ -20,7 +20,11 @@ namespace MauiMobileApps
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            try
+            {
+                builder.Services.AddSingleton<CollectionUpdateableViewModel>();
+                builder.Services.AddSingleton<CollectionUpdateableWButtonsPage>();
+            }
             return builder.Build();
         }
     }
