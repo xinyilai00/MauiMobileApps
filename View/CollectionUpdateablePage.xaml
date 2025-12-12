@@ -54,15 +54,13 @@
 
                             <!-- Buttons -->
                             <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
-                                <Button Text="Update"
-                                        Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsCollectionView}}"
-                                        CommandParameter="{Binding .}"
-                                        TextTransform="None" />
+                                <ImageButton Source="{Binding EditButton}"
+                                             Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsCollectionView}}"
+                                             CommandParameter="{Binding .}"/>
 
-                                <Button Text="Delete"
-                                        Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsCollectionView}}"
-                                        CommandParameter="{Binding .}"
-                                        TextTransform="None" />
+                                <ImageButton Source="{Binding DeleteButton}"
+                                            Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsCollectionView}}"
+                                            CommandParameter="{Binding .}" />
                             </HorizontalStackLayout>
 
                             <!-- Divider -->

@@ -10,8 +10,8 @@ public class MarvelMovies
 {
     public string NameofMovie { get; set; }
 
-    //public ImageSource EditButton { get; } = Buttons.ButtonEdit;
-    //public ImageSource DeleteButton { get; } = Buttons.ButtonDelete;
+    public ImageSource EditButton { get; } = Buttons.IconsEdit;
+    public ImageSource DeleteButton { get; } = Buttons.IconsDelete;
 
     public MarvelMovies()
     {

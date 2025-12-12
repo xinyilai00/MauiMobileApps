@@ -1,4 +1,6 @@
 ﻿using CommunityToolkit.Maui;
+using MauiMobileApps.View;
+using MauiMobileApps.ViewModel;
 using Microsoft.Extensions.Logging;
 
 namespace MauiMobileApps
@@ -23,7 +25,11 @@ namespace MauiMobileApps
             try
             {
                 builder.Services.AddSingleton<CollectionUpdateableViewModel>();
-                builder.Services.AddSingleton<CollectionUpdateableWButtonsPage>();
+                builder.Services.AddSingleton<CollectionUpdateablePage>();
+            }
+            catch (Exception ex)
+            {
+
             }
             return builder.Build();
         }

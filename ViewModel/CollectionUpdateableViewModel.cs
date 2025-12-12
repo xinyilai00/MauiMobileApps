@@ -28,7 +28,7 @@ namespace MauiMobileApps.ViewModel
 
         public CollectionUpdateableViewModel()
         {
-            Title = TitleCollections.Title;
+            Title = TitleCollectionUpdate.Title;
 
             // central listener for any UpdateMovieMessage
             WeakReferenceMessenger.Default.Register<UpdateMovieMessage>(this, (r, m) =>
