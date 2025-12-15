@@ -103,6 +103,9 @@
 		<MauiXaml Update="View\CollectionUpdateablePage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="View\CollectionUpdateablewImagesPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="View\ImageActivityIndicatorPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>

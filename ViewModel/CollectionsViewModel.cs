@@ -48,7 +48,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task IconsCollectionClicked()
         {
-            //await Shell.Current.GoToAsync(nameof());
+            await Shell.Current.GoToAsync(nameof(CollectionUpdateablewImagesPage));
         }
 
         public CollectionsViewModel()
