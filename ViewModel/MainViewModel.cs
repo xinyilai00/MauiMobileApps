@@ -45,6 +45,13 @@ namespace MauiMobileApps.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(CollectionsPage));
         }
+
+        [RelayCommand]
+        private async Task ControlsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlsPage));
+        }
+
         public MainViewModel()
         {
             //Title = TitleMain.Title;

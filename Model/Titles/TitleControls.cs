@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MauiMobileApps.Model.Titles
+{
+    public static class TitleControls
+    {
+        public static string Title { get; } = "Controls Page";
+        public static string Slider { get; } = "Slider";
+        public static string Stepper { get; } = "Stepper";
+        public static string Switch { get; } = "Switch";
+        public static string Entry { get; } = "Entry";
+        //public static string Picker { get; } = "Picker";
+        //public static string Date { get; } = "Date and Time Picker";
+        public static string SPage { get; } = "Slider Page";
+    }
+}
