@@ -109,6 +109,12 @@
 		<MauiXaml Update="View\ControlSliderPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="View\ControlSliderVMPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="View\ControlSliderxamlPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="View\ControlsPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>

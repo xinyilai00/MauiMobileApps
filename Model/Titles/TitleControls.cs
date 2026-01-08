@@ -15,6 +15,10 @@ namespace MauiMobileApps.Model.Titles
         public static string Entry { get; } = "Entry";
         //public static string Picker { get; } = "Picker";
         //public static string Date { get; } = "Date and Time Picker";
-        public static string SPage { get; } = "Slider Page";
+        public static string Spage { get; } = "Slider Page";
+        public static string Xaml { get; } = "Slider XAML";
+        public static string Vm { get; } = "Slider VM";
+        public static string Sxpage { get; } = "Slider XAML Page";
+        public static string Svpage { get; } = "Slider VM Page";
     }
 }

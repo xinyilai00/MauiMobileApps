@@ -40,7 +40,7 @@
                     Style="{StaticResource TitleButton}"/>
             
             <Button Text="{Binding Controls}"
-                    Command="{Binding CpntrolsClickedCommand}"
+                    Command="{Binding ControlsClickedCommand}"
                     Grid.Row="1"
                     Grid.Column="1"
                     Style="{StaticResource TitleButton}"/>

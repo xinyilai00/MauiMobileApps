@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MauiMobileApps.Model.Titles;
+using MauiMobileApps.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +12,24 @@ namespace MauiMobileApps.ViewModel
 {
     public partial class ControlSliderViewModel : ObservableObject
     {
-        public string Title => TitleControls.SPage;
+        public string Title => TitleControls.Spage;
 
         [ObservableProperty]
-        private double sliderValue = 0.5;
+        private string sliderxaml = TitleControls.Xaml;
+
+        [ObservableProperty]
+        private string slidervm = TitleControls.Vm;
 
         [RelayCommand]
-        private void SetToHalf()
+        private async Task SliderxamlClicked()
         {
+            await Shell.Current.GoToAsync(nameof(ControlSliderxamlPage));
+        }
 
+        [RelayCommand]
+        private async Task SlidervmClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlSliderVMPage));
         }
     }
 }

@@ -26,6 +26,7 @@ namespace MauiMobileApps.ViewModel
         [ObservableProperty]
         private string entry = TitleControls.Entry;
 
+
         [RelayCommand]
         private async Task SliderClicked()
         {
@@ -61,5 +62,7 @@ namespace MauiMobileApps.ViewModel
         {
             //await Shell.Current.GoToAsync(nameof());
         }
+
+
     }
 }

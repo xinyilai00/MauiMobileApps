@@ -3,30 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiMobileApps.View.ControlSliderPage"
              Title="{Binding Title}">
-    
-    <VerticalStackLayout>
-        <BoxView x:Name="MyBox" Color="Blue"
-                 HeightRequest="25" HorizontalOptions="Fill" />
 
-        <Slider x:Name="MySlider"
-                Minimum="0" Maximum="1" Value="1" 
-                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
-                HorizontalOptions="Fill"
-                ValueChanged="OnSliderValueChange" />
+    <VerticalStackLayout Padding="24,16"
+                         Spacing="24">
+        
+        <Grid RowSpacing="20"
+              ColumnSpacing="20"
+              Padding="0">
 
-        <Label x:Name="ValueLabel"
-               FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <Label x:Name="InfoLabel"
-               Text="Moving the slider will change opacity"
-               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
-               HorizontalOptions="Center" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-        <Button x:Name="ResetBtn"
-                Text="Set Slider to 50%"
-                FontAttributes="Bold"
-                TextColor="White"
-                HorizontalOptions="Center"
-                Clicked="OnResetBtnClicked" />
+            <Button Text="{Binding Sliderxaml}"
+                    Command="{Binding SliderxamlClickedCommand}"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Style="{StaticResource TitleButton}"/>
+
+            <Button Text="{Binding Slidervm}"
+                    Command="{Binding SlidervmClickedCommand}"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Style="{StaticResource TitleButton}"/>
+
+        </Grid>
+
     </VerticalStackLayout>
 </ContentPage>
