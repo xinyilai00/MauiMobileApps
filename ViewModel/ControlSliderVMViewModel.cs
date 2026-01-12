@@ -14,12 +14,23 @@ namespace MauiMobileApps.ViewModel
         public string Title => TitleControls.Svpage;
 
         [ObservableProperty]
-        private double sliderValue;
+        private double sliderValue = 1.0;
+
+        [ObservableProperty]
+        private Color boxColor = Colors.Blue;
+
+        [ObservableProperty]
+        private Color thumbColor = Colors.Blue;
+
+        [ObservableProperty]
+        private string valueText = "Moving Slider Will Change Opacity";
+
 
         [RelayCommand]
         private void SetToHalf()
         {
             SliderValue = 0.5;
         }
+
     }
 }

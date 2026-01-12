@@ -6,26 +6,33 @@
 
     <VerticalStackLayout>
 
-        <BoxView x:Name="MyBox" Color="Blue"
+        <BoxView Color="{Binding BoxColor}" Opacity="{Binding SliderValue}"
                  HeightRequest="25" HorizontalOptions="Fill" />
 
-        <Slider x:Name="MySlider"
-                Minimum="0" Maximum="1" Value="1" 
-                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
-                HorizontalOptions="Fill"
-                ValueChanged="OnSliderValueChange" />
+        <Slider Minimum="0"
+                Maximum="1"
+                Value="{Binding SliderValue}"
+                ThumbColor="{Binding ThumbColor}"
+                MaximumTrackColor="BlueViolet"
+                MinimumTrackColor="DarkOrange"
+                HorizontalOptions="Fill" />
 
-        <Label x:Name="ValueLabel"
-                   FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+        <Label Text="{Binding SliderValue, StringFormat='Value of the slider is {0:F2}'}"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center" />
 
-        <Label x:Name="InfoLabel"
-               Text="Moving the slider will change opacity"
-               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
+        <Label Text="{Binding ValueText}"
+               FontAttributes="Bold" 
+               FontSize="Medium"
+               TextColor="Blue" 
                HorizontalOptions="Center" />
 
         <Button Text="Set Slider to 50%"
                 Command="{Binding SetToHalfCommand}"
-                Style="{StaticResource TitleButton}"/>
+                BackgroundColor="Blue"
+                TextColor="White"
+                HorizontalOptions="Center" />
 
     </VerticalStackLayout>
 </ContentPage>
