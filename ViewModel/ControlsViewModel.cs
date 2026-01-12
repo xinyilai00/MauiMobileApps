@@ -26,6 +26,12 @@ namespace MauiMobileApps.ViewModel
         [ObservableProperty]
         private string entry = TitleControls.Entry;
 
+        [ObservableProperty]
+        private string picker = TitleControls.Picker;
+
+        [ObservableProperty]
+        private string date = TitleControls.Date;
+
 
         [RelayCommand]
         private async Task SliderClicked()
@@ -36,7 +42,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task StepperClicked()
         {
-            //await Shell.Current.GoToAsync(nameof());
+            await Shell.Current.GoToAsync(nameof(ControlStepperPage));
         }
 
         [RelayCommand]

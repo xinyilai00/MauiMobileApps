@@ -118,6 +118,9 @@
 		<MauiXaml Update="View\ControlsPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="View\ControlStepperPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="View\ImageActivityIndicatorPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>

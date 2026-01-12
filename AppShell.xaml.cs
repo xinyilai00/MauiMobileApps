@@ -35,6 +35,7 @@ namespace MauiMobileApps
             Routing.RegisterRoute(nameof(ControlSliderPage), typeof(ControlSliderPage));
             Routing.RegisterRoute(nameof(ControlSliderxamlPage), typeof(ControlSliderxamlPage));
             Routing.RegisterRoute(nameof(ControlSliderVMPage), typeof(ControlSliderVMPage));
+            Routing.RegisterRoute(nameof(ControlStepperPage), typeof(ControlStepperPage));
         }
     }
 }
