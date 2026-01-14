@@ -17,6 +17,7 @@ namespace MauiMobileApps.ViewModel
 
         [ObservableProperty]
         private bool isOn;
+
         public ControlSwitchVMViewModel()
         { 
             IsOn = true; 
