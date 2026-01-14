@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMobileApps.View.ControlSwitchVMPage"
+             Title="{Binding Title}">
+    
+    <VerticalStackLayout Margin="0,200,0,0">
+        <Label Text="Switch Example"
+               TextColor="{Binding LabelColor}"
+               FontSize="Large" FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+        <Switch IsToggled="{Binding IsOn}"
+                ThumbColor="Blue" OnColor="Green" 
+                HorizontalOptions="Center"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

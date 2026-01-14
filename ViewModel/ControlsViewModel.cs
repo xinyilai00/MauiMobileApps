@@ -48,7 +48,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task SwitchClicked()
         {
-            //await Shell.Current.GoToAsync(nameof());
+            await Shell.Current.GoToAsync(nameof(ControlSwitchVMPage));
         }
 
         [RelayCommand]
