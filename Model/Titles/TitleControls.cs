@@ -23,7 +23,9 @@ namespace MauiMobileApps.Model.Titles
         public static string Svpage { get; } = "Slider VM Page";
 
         public static string Stpage { get; } = "Stepper VM Page";
-
         public static string Swpage { get; } = "Switch VM Page";
+
+        public static string Epage { get; } = "Entry VM Page";
+        public static string Eresult { get; } = "Entry Results";
     }
 }
