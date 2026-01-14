@@ -22,6 +22,8 @@ namespace MauiMobileApps.Model.Titles
         public static string Sxpage { get; } = "Slider XAML Page";
         public static string Svpage { get; } = "Slider VM Page";
 
-        public static string Stpage { get; } = "Stepper Page";
+        public static string Stpage { get; } = "Stepper VM Page";
+
+        public static string Swpage { get; } = "Switch VM Page";
     }
 }

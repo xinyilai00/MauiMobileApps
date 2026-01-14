@@ -5,39 +5,38 @@
              Title="{Binding Title}">
 
     <Grid Margin="20"
-              RowDefinitions="Auto"
-              ColumnDefinitions="*">
+          RowDefinitions="Auto, Auto"
+          ColumnDefinitions="*">
 
         <Grid Grid.Row="0"
-                  HeightRequest="200"
-                  WidthRequest="200"
-                  HorizontalOptions="Center"
-                  VerticalOptions="Center">
+              HeightRequest="200"
+              WidthRequest="200"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
 
-            <Label x:Name="RotatingLabel"
-                   Text="ROTATING TEXT!"
+            <Label Text="ROTATING TEXT!"
+                   FontSize="Large" FontAttributes="Bold,Italic"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   AnchorX="0.5" AnchorY="0.5" />
+                   AnchorX="0.5" AnchorY="0.5" 
+                   Rotation="{Binding StepperValue}"/>
         </Grid>
 
         <VerticalStackLayout Grid.Row="1"
                              Spacing="10"
                              HorizontalOptions="Center">
 
-            <Stepper x:Name="stepper"
-                     Minimum="0"
+            <Stepper Minimum="0"
                      Maximum="360"
                      Increment="10"
-                     Value="0"
+                     BackgroundColor="Blue"
                      WidthRequest="300"
                      HorizontalOptions="Center"
-                     ValueChanged="OnStepperValueChanged" />
+                     Value="{Binding StepperValue, Mode=TwoWay}" />
 
-            <Label x:Name="DisplayLabel"
+            <Label Text="{Binding DisplayText}"
                    FontSize="Large" FontAttributes="Bold"
-                   HorizontalOptions="Center" 
-                   Text="The Stepper value is 0"/>
+                   HorizontalOptions="Center"/>
         </VerticalStackLayout>
 
     </Grid>

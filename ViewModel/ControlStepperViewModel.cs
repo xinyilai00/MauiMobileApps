@@ -13,6 +13,15 @@ namespace MauiMobileApps.ViewModel
         public string Title => TitleControls.Stpage;
 
         [ObservableProperty]
-        private int stepperValue;
+        private double stepperValue;
+
+        [ObservableProperty]
+        private string displayText = "The Stepper Value is 0";
+
+        partial void OnStepperValueChanged(double value)
+        {
+            DisplayText = $"The Stepper Value is {value:F0}";
+        }
+
     }
 }
