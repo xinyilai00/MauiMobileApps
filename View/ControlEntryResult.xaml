@@ -3,11 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiMobileApps.View.ControlEntryResult"
              Title="{Binding Title}">
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <StackLayout VerticalOptions="Center">
+        
+        <Label Text="Result From Entry Page" 
+               FontSize="Title"
+               FontAttributes="Bold"
+               TextColor="Blue"
+               HorizontalOptions="Center"/>
+
+        <BoxView HeightRequest="3"
+                 Background="Black"
+                 WidthRequest="300"/>
+
+        <Label Text="{Binding EntryText}"
+               FontSize="Title"
+               TextColor="DarkRed"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+    </StackLayout>
+
 </ContentPage>

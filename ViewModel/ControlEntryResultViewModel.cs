@@ -11,5 +11,8 @@ namespace MauiMobileApps.ViewModel
     public partial class ControlEntryResultViewModel : ObservableObject
     {
         public string Title => TitleControls.Eresult;
+
+        [ObservableProperty]
+        private string entryText;
     }
 }

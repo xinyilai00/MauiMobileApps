@@ -54,7 +54,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task EntryClicked()
         {
-            //await Shell.Current.GoToAsync(nameof());
+            await Shell.Current.GoToAsync(nameof(ControlEntryVMPage));
         }
 
         [RelayCommand]
