@@ -27,5 +27,8 @@ namespace MauiMobileApps.Model.Titles
 
         public static string Epage { get; } = "Entry VM Page";
         public static string Eresult { get; } = "Entry Results";
+
+        public static string Ppage { get; } = "Picker VM Page";
+        public static string Presult { get; } = "Picker Results";
     }
 }

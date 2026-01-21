@@ -60,7 +60,7 @@ namespace MauiMobileApps.ViewModel
         [RelayCommand]
         private async Task PickerClicked()
         {
-            //await Shell.Current.GoToAsync(nameof());
+            await Shell.Current.GoToAsync(nameof(ControlPickerVMPage));
         }
 
         [RelayCommand]

@@ -25,6 +25,7 @@ namespace MauiMobileApps.ViewModel
                 await Shell.Current.DisplayAlert(TitleControls.Epage,
                                                 "Entry is empty. Please enter text.",
                                                 "OK");
+                return;
             }
 
             await Shell.Current.GoToAsync($"{nameof(ControlEntryResult)}?entryText={EntryText}");

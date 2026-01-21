@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace MauiMobileApps.ViewModel
 {
+    [QueryProperty(nameof(EntryText), "entryText")]
     public partial class ControlEntryResultViewModel : ObservableObject
     {
         public string Title => TitleControls.Eresult;

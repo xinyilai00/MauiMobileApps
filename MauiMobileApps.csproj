@@ -112,6 +112,12 @@
 		<MauiXaml Update="View\ControlEntryVMPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="View\ControlPickerResult.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="View\ControlPickerVMPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="View\ControlSliderPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
